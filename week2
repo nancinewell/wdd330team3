@@ -16,15 +16,15 @@
 
 		//3. Wendy second function: expects a number as an argument,  sum all the numbers up to it, write to div.
 
-function addNumber() { 
-	let num1 = parseFloat(document.getElementById("numInput1").value);
-	var Total = 0
-   	for (var i=1; i <= num1;  i++) { 
-        // a place to store the input number
-		Total += i;
+		function addNumber() { 
+			let num1 = parseFloat(document.getElementById("numInput1").value);
+			var Total = 0
+			for (var i=1; i <= num1;  i++) { 
+				// a place to store the input number
+				Total += i;
+				}
+			document.getElementById("output").innerHTML = Total;
 		}
-document.getElementById("output").innerHTML = Total;
-}
 		
 		//5. Nanci third function: sum the numbers from both inputs, write to div.
 		function sumBothNumbers() {
@@ -79,7 +79,7 @@ document.getElementById("output").innerHTML = Total;
 	<input id="numInput2" type= "number" >
 	<button onclick="sumBothNumbers()">+</button>
 
-<h5>Strech Goal 1</h5>
+	<h5>Strech Goal 1</h5>
 	<select id="operator">
 	  <option value="multiply" >Multiply</option>
 	  <option value="divide">Divide</option>
@@ -95,7 +95,3 @@ document.getElementById("output").innerHTML = Total;
 	<div id="output"><div>
 </body>
 </html>
-
-
-
-
